@@ -1,27 +1,27 @@
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 0;
-  padding: 40px 20px;
-  background: linear-gradient(135deg, #f8f6f3 0%, #ffffff 100%);
-  min-height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8f6f3 0%, #ffffff 100%);
+    min-height: 100vh;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: #2c2c2c;
-  margin-bottom: 10px;
-  letter-spacing: -0.02em;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
 }
 
 .subtitle {
@@ -31,14 +31,13 @@ body {
     letter-spacing: 0.02em;
 }
 
-.palette-grid {
+.palette_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    margin-bottom: 50px;
 }
 
-.color-section {
+.color_section {
     background: white;
     border-radius: 20px;
     padding: 30px;
@@ -46,7 +45,7 @@ body {
     border: 1px solid #f0ede8;
 }
 
-.section-title {
+.section_title {
     font-size: 1.3rem;
     font-weight: 500;
     color: #2c2c2c;
@@ -55,14 +54,14 @@ body {
     letter-spacing: 0.01em;
 }
 
-.color-card {
+.color_card {
     margin-bottom: 20px;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
-.color-swatch {
+.color_swatch {
     height: 80px;
     position: relative;
     display: flex;
@@ -71,31 +70,31 @@ body {
     transition: transform 0.3s ease;
 }
 
-.color-card:hover .color-swatch {
+.color_card:hover .color_swatch {
     transform: scale(1.02);
 }
 
-.color-info {
+.color_info {
     background: white;
     padding: 15px 18px;
     border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-.color-name {
+.color_name {
     font-weight: 500;
     color: #2c2c2c;
     margin-bottom: 5px;
     font-size: 0.95rem;
 }
 
-.color-hex {
+.color_hex {
     font-family: 'Monaco', 'Menlo', monospace;
     font-size: 0.85rem;
     color: #8b8680;
     letter-spacing: 0.5px;
 }
 
-.usage-guide {
+.usage_guide {
     background: white;
     border-radius: 20px;
     padding: 40px;
@@ -104,7 +103,7 @@ body {
     margin-top: 40px;
 }
 
-.usage-title {
+.usage_title {
     font-size: 1.5rem;
     font-weight: 500;
     color: #2c2c2c;
@@ -112,20 +111,21 @@ body {
     text-align: center;
 }
 
-.usage-grid {
+.usage_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
-.usage-item {
+
+.usage_item {
     padding: 20px;
     background: #fafaf9;
     border-radius: 12px;
     border-left: 4px solid #d4c4a8;
 }
 
-.usage-category {
+.usage_category {
     font-weight: 600;
     color: #2c2c2c;
     margin-bottom: 8px;
@@ -134,22 +134,32 @@ body {
     letter-spacing: 0.05em;
 }
 
-.usage-description {
+.usage_description {
     color: #6b6b6b;
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
-.aesthetic-note {
+.aesthetic_note {
     text-align: center;
     margin-top: 40px;
     padding: 30px;
     background: linear-gradient(135deg, #f8f6f3 0%, #ffffff 100%);
     border-radius: 16px;
     border: 1px solid #ede8e0;
+}
+
+.aesthetic_note--p {
     color: #8b8680;
     font-style: italic;
     margin: 0;
     font-size: 1.05rem;
     line-height: 1.6;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 728px) {
+.container {
+    flex-direction: column;
+}
 }
