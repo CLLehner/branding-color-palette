@@ -32,7 +32,7 @@ body {
 }
 
 .palette_grid {
-    display: grid;
+    display: grid
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
@@ -141,7 +141,6 @@ body {
 }
 
 .aesthetic_note {
-    text-align: center;
     margin-top: 40px;
     padding: 30px;
     background: linear-gradient(135deg, #f8f6f3 0%, #ffffff 100%);
@@ -155,11 +154,105 @@ body {
     margin: 0;
     font-size: 1.05rem;
     line-height: 1.6;
+    margin-bottom: 24px;
+    justify-content: space-between;
 }
 
-/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
-@media (max-width: 728px) {
-.container {
-    flex-direction: column;
+/* Typography Section Styles */
+.typography-section {
+    margin-bottom: 50px;
 }
+
+.section-main-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.01em;
+}
+
+.typography-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.font-card {
+    margin-bottom: 20px;
+    background: #fafaf9;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #f0ede8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.font-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.font-sample {
+    padding: 20px;
+}
+
+.font-preview {
+    font-size: 1.4rem;
+    color: #2c2c2c;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.font-details {
+    border-top: 1px solid #ede8e0;
+    padding-top: 12px;
+}
+
+.font-name {
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-description {
+    color: #8b8680;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.typography-guidelines {
+    padding: 10px 0;
+}
+
+.guideline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0ede8;
+    gap: 15px;
+}
+
+.guideline-item:last-child {
+    border-bottom: none;
+}
+
+.guideline-category {
+    font-weight: 600;
+    color: #2c2c2c;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+.guideline-text {
+    color: #6b6b6b;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: right;
 }
